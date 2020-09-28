@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    width: auto;
+}
+
+.sesion-login{
+    text-align: center;
+    overflow: hidden;
+}
+
+.sesion-login h1{
+    font-size: 30px;
+    font-style: italic;
+    margin: 20px;
+}
+
+.sesion-login hr{
+    width: 20%;
+    margin: auto;
+    padding: 1px;
+    background: rgba(0,0,0,.9);
+}
+
+.sesion-login h3{
+    font-size: 20px;
+    font-style: italic;
+    margin: 5px;
+}
+
+.sesion-login input{
+    width: 20%;
+    padding: 1px;
+    margin: 1px 0;
+    border: none;
+    border-bottom: 2px solid rgba(0,0,0,.9);
+    font-size: 15px;
+    background: transparent;
+    outline: none;
+}
+
+.sesion-login button{
+    margin: 20px;
+    padding: 1px 70px;
+    font-size: 20px;
+    background: rgba(0,0,0,.9);
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    transition: 0.3s;
+}
+
