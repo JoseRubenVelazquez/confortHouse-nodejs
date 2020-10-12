@@ -1,0 +1,80 @@
+/* Header section */
+.logo{
+    width: 180px;
+    height: 110px;
+}
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+}
+.menu-login .login{
+    list-style: none;
+    margin: 30px auto 10px auto;
+    width: auto;
+}
+.menu-login a{
+    text-decoration: none;
+    padding: 15px;
+    color: #000;
+    font-weight: bold;
+    font-size: 15px;
+    width: auto;
+}
+.menu-login a:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color: #000;
+    border-radius: 8px;
+}
+
+/* Navbar section*/
+.navbar-nav{
+    padding: 5px 10px;
+    width: auto;
+}
+.navbar-nav .nav-link{
+    width: auto;
+    font-size: 15px;
+    color: #000 !important;
+}
+.navbar-nav .nav-link:hover{
+    cursor: pointer;
+    color:#fff !important;
+    background-color: #000;
+    border-radius: 8px;
+}
+.navbar-nav .nav-item .nav-link{
+    padding: 15px;
+}
+
+/* Shopping section */
+.shop{
+    list-style: none;
+    margin-top: 30px;
+}
+.shopping{
+    margin-left: 150px;
+}
+.header i{
+    text-decoration: none;
+    margin-right: 40px;
+    color: #000;
+    font-weight: bold;
+    font-size: 17px;
+}
+.shopping i:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color: #000;
+    border-radius: 8px;
+}
+.form-inline{ 
+    padding-left: 100px;
+}
+.btn{
+    font-weight: bold;
+}
+.btn:hover{
+    background-color: #000;
+}

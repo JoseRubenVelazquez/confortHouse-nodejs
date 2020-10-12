@@ -1,11 +1,15 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
+const config = require("./config");
 
-mongoose.connect('mongodb://localhost/users-db-app', {
-    useCreateIndex: true,
+const MONGODB_URI = 'mongodb+srv://Ruben:ujm4AQ4VM41tU9g0@cluster0.leugp.mongodb.net/confortHouse'
+
+mongoose
+  .connect(MONGODB_URI, {
     useNewUrlParser: true,
-    useFindAndModify: false
-})
-
-.then(db => console.log('DB is connected'))
-.catch(err => console.error(err));
+    useUnifiedTopology: true,
+    useFindAndModify: false,
+    useCreateIndex: true,
+  })
+  .then((db) => console.log("Mongodb is connected to", db.connection.host))
+  .catch((err) => console.error(err));
 

@@ -1,0 +1,43 @@
+/* Contact */
+.container-contact{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+.card-contact{
+    width: 280px;
+    height: 230px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    margin: 10px;
+    border-radius: 8px;
+}
+.card-contact img{
+    margin: 10px;
+    width: 12rem;
+    height: 12rem;
+}
+.card-contact .text-contact{
+    width: 0%;
+    height: 37vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.text-contact p{
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    font-size: 20px;
+}
+.card-contact:hover .text-contact{
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+}

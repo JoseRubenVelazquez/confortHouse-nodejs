@@ -7,3 +7,13 @@ $(".slider-promotions")
     slideToScroll:1,
     autoplaySpeed:3000
 });
+
+var buscador = $("#table").DataTable();
+$("#input-search").keyup(function(){
+    buscador.search($(this).val()).draw();
+    if ($("#input-search").val() == "") {
+        $(".content-search").fadeUp();
+    } else {
+        $(".content-search").fadeIn();
+    }
+})

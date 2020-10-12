@@ -1,0 +1,45 @@
+/* Innovations products */
+.card-gallery{
+    width: 90%;
+    margin: 0 120px 0 120px ;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+} 
+.cards{
+    margin-top: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,.3);
+    transition: all 300ms;
+    width: 18rem;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cards:hover{
+    transform: scale(1.05);
+    background-color: rgba(0,0,0,.1);
+}
+.card-img{
+    margin: auto;
+    height: auto;
+    max-width: 100%;
+    display: block;
+} 
+.card-body{
+    margin: auto;
+    width: 12.5rem;
+    display: block;
+    text-align: center;
+}
+@media screen and (min-width: 590px){
+    .card-gallery{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (min-width: 960px){
+    .card-gallery{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

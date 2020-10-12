@@ -5,49 +5,17 @@
         <!-- Login and Register -->
         <div class="menu-login">
             <ul class="login">
-                <li class="register">
-                    <a href="/users/signin">Iniciar sesión</a>
-                    <a href="/users/signup">Registrarse</a>
-                </li>
+                {{#if user}}
+                    <li class="register">
+                        <a href="/users/logout">Cerrar sesion</a>
+                    </li>
+                {{else}}
+                    <li class="register">
+                        <a href="/users/signin">Iniciar sesión</a>
+                        <a href="/users/signup">Registrarse</a>
+                    </li>
+                {{/if}}
             </ul>
         </div>
     </div>
-    <!-- Navbar -->
-    <div class="container-fluid p-0">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                    <a class="nav-link" href="#Products"><strong>Productos</strong></a>
-                    </li>
-                    <li class="nav-item active">
-                    <a class="nav-link" href="#Promotions"><strong>Promociones</strong></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#Services"><strong>Servicios</strong></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#We"><strong>Nosotros</strong></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#Contacts"><strong>Contactos</strong></a>
-                    </li>
-                </ul>
-            </div>
-            <!-- Navbar shopping -->
-            <div class="navbar-shopping">
-                <nav class="navbar-shop">
-                    <ul class="shop">
-                        <li class="shopping">
-                            <i class="fas fa-search border rounded-circle p-2"></i>
-                            <i class="fas fa-shopping-basket border rounded-circle p-2"></i>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </nav>
-    </div> 
 </div>

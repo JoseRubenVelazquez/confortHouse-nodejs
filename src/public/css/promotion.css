@@ -1,0 +1,18 @@
+/* Promotions products */
+.site-slider-promotions .products-promotions{
+    height: 31rem;
+    position: relative;
+    overflow: hidden;
+}
+.site-slider-promotions img{
+    width: 90%;
+    margin: auto;
+}
+.site-slider-promotions img:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+} 
+.site-slider-promotions #price:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
